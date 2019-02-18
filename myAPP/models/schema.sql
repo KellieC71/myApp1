@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS signindb;
+CREATE DATABASE signindb;
+
+--npm start DROP DATABASE IF EXISTS dbmeds;
+-- CREATE DATABASE dbmeds;
+
+
+
+DROP DATABASE IF EXISTS testdb;
+CREATE DATABASE testdb;

@@ -1,0 +1,35 @@
+<nav class="navbar navbar-light bg-light static-top">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="/img/eventree2.png" height="75" width="75"> </div>
+  </a>
+  <a href="/signup" class="btn btn-primary" id="navsign">Sign Up</a>
+  <a href="/login" class="btn btn-primary" id="navlogin">Login</a>
+  </div>
+</nav>
+
+<!-- Masthead -->
+<header class="masthead text-white text-center">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <h1 class="mb-5">Med List</h1>
+      </div>
+      <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+        <ul>
+          {{#each events}}
+          <li>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-primary active btn-choice">
+                {{name}}
+                <input type="radio" data-name="{{name}}" data-id="event-selector-{{id}}" unchecked autocomplete="off">
+              </label>
+            </div>
+          </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

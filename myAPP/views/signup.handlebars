@@ -1,0 +1,41 @@
+<!-- Navigation -->
+<nav class="navbar navbar-light bg-light static-top">
+    <div class="container">
+        <a class="navbar-brand" href="/">
+            <img src="/img/applogo" height="75" width="75"> </div>
+    </a>
+    <a href="/signup" class="btn btn-primary" id="navsign">Sign Up</a>
+    <a href="/login" class="btn btn-primary" id="navlogin">Login</a>
+    </div>
+</nav>
+
+<!-- Masthead -->
+<header class="masthead text-white" id="signupImg">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto text-center">
+                <h1 class="mb-5">Create an account</h1>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-4 mx-auto">
+                <form id="create-user" method="POST" action="/api/signup">
+                    <div class="form-group-email">
+                        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter Email">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group-username">
+                        <input type="name" name="username" class="form-control" id="userName" aria-describedby="username" placeholder="Enter Username">
+                        <small id="emailHelp" class="form-text text-muted"></small>
+                    </div>
+                    <div class="form-group-password">
+                        <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                    </div>
+                    <br>
+                    <div class="form-group-submit-btn">
+                        <button type="submit" class="btn btn-primary" id="subBtn">Create</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
